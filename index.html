@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>html</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <style>
+        .bx-wrapper {
+            box-shadow: none;
+            border: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <img src="images/2.png">
+        </div>
+        <nav class="gnav">
+            <ul class="gnav__ul">
+                <li><a href="#products">商品情報</a></li>
+                <li><a href="#series">シリーズ</a></li>
+                <li><a href="#making">ジャムづくり体験</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-second">
+            <img src="images/1.png">
+        </div>
+        <div class="main-button">
+            <a href="#making"><img src="images/3.png"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="products">
+            <img src="images/4.png" id="products">
+        </div>
+        <div class="ph">
+            <ul class="bxslider">
+                <li><img src="images/6.jpg" alt="sweets"></li>
+                <li><img src="images/7.jpg" alt="sweets"></li>
+                <li><img src="images/8.jpg" alt="sweets"></li>
+            </ul>
+        </div>
+        <div class="series">
+            <img src="images/9.png" id="series">
+        </div>
+        <div class="buy">
+            <a href="https://www.aohata.co.jp/"><img src="images/10.png"></a>
+        </div>
+        <a name="making">
+            <div class="making">
+                <img src="images/11.png" id="making">
+            </div>
+        </a>
+    </main>
+
+    <script>
+        $('.bxslider').bxSlider({
+            auto: true,
+            autoControls: false,
+            stopAutoOnClick: true,
+            pager: true,
+            pause: 2000,
+            speed: 2000,
+            margin: 0,
+        });
+
+    </script>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>
